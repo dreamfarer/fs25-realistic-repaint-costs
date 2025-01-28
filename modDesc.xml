@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="92">
+	<author>Dreamfarer</author>
+	<version>1.0.0.0</version>
+	<title>
+		<en>Realistic Repainting Costs</en>
+		<de>Realistische Neulackierungskosten</de>
+		<fr>Coûts de Repeinture Réalistes</fr>
+	</title>
+	
+	<description>
+<en>
+<![CDATA[
+Makes repaint costs more realistic and budget-friendly.
+]]>
+</en>
+<de>
+<![CDATA[
+Macht die Neulackierungskosten realistischer und kostengünstiger.
+]]>
+</de>
+<fr>
+<![CDATA[
+Rend les coûts de repeinture plus réalistes et économiques.
+]]>
+</fr>
+	</description>
+
+	<iconFilename>assets/icon.dds</iconFilename>
+	<multiplayer supported="true"/>
+
+	<extraSourceFiles>
+		<sourceFile filename="source/register.lua"/>
+	</extraSourceFiles>
+
+	<registerSpecialization>
+        <specialization filename="source/realisticRepaintCosts.lua" name="realisticRepaintCosts" className="RealisticRepaintCosts">
+            <filter>
+                <required>wearable</required>
+            </filter>
+        </specialization>
+	</registerSpecialization>
+
+</modDesc>
