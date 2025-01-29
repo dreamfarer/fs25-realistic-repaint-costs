@@ -33,12 +33,6 @@ Rend les coûts de repeinture plus réalistes et économiques.
 		<sourceFile filename="source/register.lua"/>
 	</extraSourceFiles>
 
-	<registerSpecialization>
-        <specialization filename="source/realisticRepaintCosts.lua" name="realisticRepaintCosts" className="RealisticRepaintCosts">
-            <filter>
-                <required>wearable</required>
-            </filter>
-        </specialization>
-	</registerSpecialization>
+	<register filename="source/realisticRepaintCosts.lua" name="realisticRepaintCosts" className="RealisticRepaintCosts" required="wearable"></register>
 
 </modDesc>
