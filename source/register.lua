@@ -8,6 +8,7 @@
 
 RegisterSpecialization = {};
 
+--- register loads the attributes of the first <register> tag from 'modDesc.xml' and registers this new specialization in every vehicle that has already a specialization defined by '#required' in 'modDesc.xml'.
 function RegisterSpecialization:register()
     local xmlFile = loadXMLFile("registerSpecializationXML", Utils.getFilename("modDesc.xml", g_currentModDirectory))
     local key = "modDesc.register(0)"
